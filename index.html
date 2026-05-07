@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Binary Search Tree Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <h1>Binary Search Tree Visualizer 🌳</h1>
+
+  <!-- Controls Section -->
+  <div class="controls">
+
+    <!-- Insert Input -->
+    <input
+      type="number"
+      id="node-value"
+      placeholder="Enter a number"
+    />
+
+    <!-- Insert Button -->
+    <button onclick="insertNode()">
+      Insert
+    </button>
+
+    <!-- Traversal Buttons -->
+    <button onclick="inorderTraversal()">
+      Inorder
+    </button>
+
+    <button onclick="preorderTraversal()">
+      Preorder
+    </button>
+
+    <button onclick="postorderTraversal()">
+      Postorder
+    </button>
+
+    <!-- Search Input -->
+    <input
+      type="number"
+      id="search-value"
+      placeholder="Search node"
+    />
+
+    <!-- Search Button -->
+    <button onclick="searchNode()">
+      Search
+    </button>
+
+  </div>
+
+  <!-- Output Section -->
+  <div id="output"></div>
+
+  <!-- Tree Container -->
+  <div id="tree-container">
+    <svg id="tree" width="1200" height="600"></svg>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
